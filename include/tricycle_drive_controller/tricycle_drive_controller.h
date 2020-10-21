@@ -147,6 +147,9 @@ private:
 
     /// Frame to use for the robot base:
     std::string base_frame_id_;
+    
+    /// Frame to use for the odometry:
+    std::string odom_frame_id_;
 
     /// Whether to publish odometry to tf or not:
     bool enable_odom_tf_;
