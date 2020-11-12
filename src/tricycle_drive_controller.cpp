@@ -318,7 +318,7 @@ TricycleDriveController::update(const ros::Time& time, const ros::Duration& peri
     // Brake if cmd_vel has timeout:
     if (dt > ackermann_cmd_timeout_) {
         curr_cmd.speed = 0.0;
-        // curr_cmd.angle = 0.0;
+        curr_cmd.angle = 0.0;
     }
 
     // Limit velocities and accelerations:
